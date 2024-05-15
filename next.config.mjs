@@ -1,10 +1,9 @@
 /** @type {import('next').NextConfig} */
-const isProd = process.env.NODE_ENV === "production";
 
 const nextConfig = {
-  output: "export",
-  distDir: "docs",
-  assetPrefix: isProd ? "https://saeed-pourmohammadi.github.io/resume" : "/",
+  basePath: "/resume",
+  output: "export", // <=== enables static exports
+  reactStrictMode: true,
 };
 
 export default nextConfig;
