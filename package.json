@@ -20,6 +20,9 @@
   },
   "devDependencies": {
     "eslint": "^8",
-    "eslint-config-next": "14.2.3"
+    "eslint-config-next": "14.2.3",
+    "i": "^0.3.7",
+    "npm": "^10.8.0",
+    "sass": "^1.77.1"
   }
 }

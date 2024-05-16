@@ -98,7 +98,7 @@ export default function Home() {
                 <span>saeed.pourmohammadi1998@gmail.com</span>
               </div>
             </div>
-            <div className="col-12 mb-4 mt-3">
+            <div className="col-12 mb-4 mt-3 text-justify">
               I am a frontend web developer with{" "}
               <span className="fw-bold">5 years</span> of experience working
               with the <span className="fw-bold">React</span> framework. For me,
@@ -115,7 +115,7 @@ export default function Home() {
                 <div className="mb-2">
                   <span className="fw-bold">FRONTEND,</span> 2018-2021
                 </div>
-                <div>
+                <div className="text-justify">
                   I've effectively utilized a combination of{" "}
                   <span className="fw-bold">Javascript, React.js,</span> and{" "}
                   <span className="fw-bold">Redux</span> to build robust
@@ -136,7 +136,7 @@ export default function Home() {
                 <div className="mb-2">
                   <span className="fw-bold">FRONTEND,</span> 2021-2024
                 </div>
-                <div>
+                <div className="text-justify">
                   I've harnessed a diverse skill set to create exceptional web
                   applications. Leveraging{" "}
                   <span className="fw-bold">HTML, CSS, Sass,</span> and
@@ -152,7 +152,7 @@ export default function Home() {
                   design principles guarantees optimal user experiences across
                   devices of all sizes.
                 </div>
-                <div className="mt-3">
+                <div className="mt-3 text-justify">
                   Moreover, I've integrated{" "}
                   <span className="fw-bold">WebSocket</span> technology to
                   enable read-time communication and collaboration features in
