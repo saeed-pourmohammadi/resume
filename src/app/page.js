@@ -3,8 +3,8 @@ import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
 import { useRef, useState } from "react";
 import { Spinner } from "react-bootstrap";
-import { BsDot } from "react-icons/bs";
 import { MdDownload, MdEmail } from "react-icons/md";
+import { GoDotFill } from "react-icons/go";
 
 export default function Home() {
   const skills = [
@@ -82,20 +82,23 @@ export default function Home() {
               FRONTEND DEVELOPER
             </div>
             <div className="row mx-0">
-              <div className="col-4 mb-3 small px-0">
-                <a target="_blank" href="https://linkedin.com/in/saeed-pourmohammadi">
+              <div className="col-12 col-sm-4 mb-2 small px-0 text-center">
+                <a
+                  target="_blank"
+                  href="https://linkedin.com/in/saeed-pourmohammadi"
+                >
                   linkedin.com/in/saeed-pourmohammadi
                 </a>
               </div>
-              <div className="col px-0 mb-3 text-center px-0">
+              <div className="col-12 col-sm-4 px-0 mb-2 text-center px-0">
                 Saeed pourmohammadi
               </div>
-              <div className="col-4 mb-3 px-0">
+              <div className="col-12 col-sm-4 text-center mb-2 px-0">
                 {/* <MdEmail size={18} className="me-3" /> */}
                 <span>saeed.pourmohammadi1998@gmail.com</span>
               </div>
             </div>
-            <div className="col-12 mb-4">
+            <div className="col-12 mb-4 mt-3">
               I am a frontend web developer with{" "}
               <span className="fw-bold">5 years</span> of experience working
               with the <span className="fw-bold">React</span> framework. For me,
@@ -104,11 +107,11 @@ export default function Home() {
               in creating visually appealing and user-friendly websites.
             </div>
 
-            <div className="fw-bold mt-0">EXPERIENCE</div>
+            <div className="fw-bold mt-0 mb-2 px-0">EXPERIENCE</div>
             <div>
-              <BsDot size={50} />
+              <GoDotFill className="me-2" size={20} />
               <span className="fs-5">expert developer</span>
-              <div className="ms-5">
+              <div className="ms-5 mt-2">
                 <div className="mb-2">
                   <span className="fw-bold">FRONTEND,</span> 2018-2021
                 </div>
@@ -126,10 +129,10 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div>
-              <BsDot size={50} />
+            <div className="mt-2">
+              <GoDotFill className="me-2" size={20} />
               <span className="fs-5">expert developer</span>
-              <div className="ms-5">
+              <div className="ms-5 mt-2">
                 <div className="mb-2">
                   <span className="fw-bold">FRONTEND,</span> 2021-2024
                 </div>
@@ -167,10 +170,10 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="fw-bold mt-4 mb-3">SKILLS</div>
+            <div className="fw-bold mt-4 mb-3 px-0">SKILLS</div>
             <div className="row g-1 ps-3">
               {skills.map((skill, s) => (
-                <span key={s} className="col-3">
+                <span key={s} className="col-6 col-sm-3">
                   <div className="py-2 bg-body-secondary rounded-3 text-center">
                     {/* <BiCheckCircle size={18} className="me-2" /> */}
                     {skill}
@@ -178,18 +181,18 @@ export default function Home() {
                 </span>
               ))}
             </div>
-            <div className="fw-bold mt-4 mb-3">EDUCATION</div>
-            <div className="p-0">
-              <BsDot size={50} />
+            <div className="fw-bold mt-4 mb-2 px-0">EDUCATION</div>
+            <div className="p-0 mb-2">
+              <GoDotFill className="me-2" size={20} />
               <span className="">MADANI UNIVERSITY OF TABRIZ</span>
             </div>
             <div className="mb-2 ps-5">
               <span className="fw-bold">BACHELOR OF COMPUTER SCIENCE,</span>{" "}
               2017-2021
             </div>
-            <div className="fw-bold mt-4 mb-3">LANGUAGES</div>
+            <div className="fw-bold mt-4 mb-2 px-0">LANGUAGES</div>
             {langs.map((lang, l) => (
-              <span key={l} className="col-auto">
+              <span key={l} className="col-auto g-2">
                 <div className="p-2 bg-body-secondary rounded-3 text-center">
                   {lang}
                 </div>
