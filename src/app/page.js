@@ -1,7 +1,7 @@
 "use client";
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Spinner } from "react-bootstrap";
 import { MdDownload, MdEmail } from "react-icons/md";
 import { GoDotFill } from "react-icons/go";
@@ -30,6 +30,15 @@ export default function Home() {
   const pdfRef = useRef();
   const [pending, setPending] = useState(false);
 
+  console.log(1);
+  const testRef = useRef();
+  useEffect(() => {
+    console.log("saeed")
+    console.log(testRef.current);
+  }, []);
+  console.log(2);
+
+  testRef.current = 3;
   function download() {
     const input = pdfRef.current;
     setPending(true);
