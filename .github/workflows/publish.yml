@@ -33,16 +33,16 @@ jobs:
       - name: Build with Next.js 🏗️
         run: npm run build
 
-      - name: Upload artifact 📡
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: out
-
-      # - uses: actions/upload-artifact@master
+      # - name: Upload artifact 📡
+      #   uses: actions/upload-pages-artifact@v3
       #   with:
-      #     name: page
-      #     path: build
-      #     if-no-files-found: error
+      #     path: out
+
+      - uses: actions/upload-artifact@master
+        with:
+          name: page
+          path: build
+          if-no-files-found: error
 
   deploy:
     environment:
