@@ -36,7 +36,13 @@ jobs:
       - name: Upload artifact 📡
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./out
+          path: out
+
+      # - uses: actions/upload-artifact@master
+      #   with:
+      #     name: page
+      #     path: build
+      #     if-no-files-found: error
 
   deploy:
     environment:
