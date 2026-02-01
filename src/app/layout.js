@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./page.scss";
+import LocaleProvider from "@/components/LocaleProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -9,10 +10,16 @@ export const metadata = {
   description: "saeed pourmohammadi resume",
 };
 
-export default function RootLayout({ children }) {
+export default async function RootLayout({ children }) {
+
+
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html>
+      <body>
+        <LocaleProvider>
+          {children}
+        </LocaleProvider>
+      </body>
     </html>
   );
 }

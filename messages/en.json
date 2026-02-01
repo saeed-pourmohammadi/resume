@@ -1,0 +1,79 @@
+{
+  "HomePage": {
+    "title": "FRONTEND DEVELOPER",
+    "Download-PDF-button": "Download PDF",
+    "linkedin": "linkedin.com/in/saeed-pourmohammadi",
+    "name": "Saeed Pourmohammadi",
+    "email": "saeed.pourmohammadi1998@gmail.com",
+    "short-description": {
+      "1": "I am a frontend web developer with ",
+      "2": "5 years",
+      "3": " of experience working with the ",
+      "4": "React ",
+      "5": "framework. For me, developing is more than just coding – it's a lifestyle. I believe in enjoying life while doing what I love, and I find satisfaction in creating visually appealing and user-friendly websites."
+    },
+    "EXPERIENCE": {
+      "title": "EXPERIENCE",
+      "items": [
+        {
+          "title": "expert developer",
+          "sub-title": "FRONTEND, 2018–2021",
+          "content": "I've effectively utilized a combination of Javascript, React.js, and Redux to build robust frontend applications."
+        },
+        {
+          "title": "expert developer",
+          "sub-title": "FRONTEND, 2021–2024",
+          "content": "I've harnessed a diverse skill set to create exceptional web applications, leveraging HTML, CSS, Sass, and frameworks like Bootstrap and Tailwind."
+        }
+      ]
+    },
+    "SKILLS": {
+      "title": "SKILLS",
+      "items": [
+        "javascript",
+        "react.js",
+        "next.js",
+        "React hook",
+        "Redux",
+        "css",
+        "sass",
+        "bootstrap",
+        "tailwind",
+        "webSocket",
+        "Socket.IO",
+        "Restful API",
+        "CI/CD",
+        "Git",
+        "Responsive design",
+        "html"
+      ]
+    },
+    "EDUCATION": {
+      "title": "EDUCATION",
+      "items": [
+        {
+          "university": "MADANI UNIVERSITY OF TABRIZ",
+          "degree": "BACHELOR OF CHEMICAL ENGINEERING",
+          "year": "2017–2021"
+        }
+      ]
+    },
+    "LANGUAGES": {
+      "title": "LANGUAGES",
+      "items": [
+        {
+          "name": "English",
+          "level": "Professional working proficiency"
+        },
+        {
+          "name": "Turkish",
+          "level": "Native"
+        },
+        {
+          "name": "Persian",
+          "level": "Native"
+        }
+      ]
+    }
+  }
+}
