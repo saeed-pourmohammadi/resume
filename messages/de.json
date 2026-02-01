@@ -1,5 +1,79 @@
 {
   "HomePage": {
-    "title": "Hallo Ich bin saeed!"
+    "title": "FRONTEND-ENTWICKLER",
+    "Download-PDF-button": "PDF herunterladen",
+    "linkedin": "linkedin.com/in/saeed-pourmohammadi",
+    "name": "Saeed Pourmohammadi",
+    "email": "saeed.pourmohammadi1998@gmail.com",
+    "short-description": {
+      "1": "Ich bin ein Frontend-Webentwickler mit ",
+      "2": "5 Jahren",
+      "3": " Erfahrung in der Arbeit mit dem ",
+      "4": "React-",
+      "5": "Framework. Für mich ist die Entwicklung mehr als nur Programmieren – sie ist ein Lebensstil. Ich glaube daran, das Leben zu genießen, während ich das tue, was ich liebe, und finde Erfüllung darin, visuell ansprechende und benutzerfreundliche Websites zu erstellen."
+    },
+    "EXPERIENCE": {
+      "title": "BERUFSERFAHRUNG",
+      "items": [
+        {
+          "title": "Expertenentwickler",
+          "sub-title": "FRONTEND, 2018–2021",
+          "content": "Ich habe effektiv eine Kombination aus JavaScript, React.js und Redux eingesetzt, um robuste Frontend-Anwendungen zu entwickeln."
+        },
+        {
+          "title": "Expertenentwickler",
+          "sub-title": "FRONTEND, 2021–2024",
+          "content": "Ich habe ein vielfältiges Kompetenzspektrum genutzt, um hochwertige Webanwendungen zu entwickeln, unter Einsatz von HTML, CSS, Sass sowie Frameworks wie Bootstrap und Tailwind."
+        }
+      ]
+    },
+    "SKILLS": {
+      "title": "KENNTNISSE",
+      "items": [
+        "JavaScript",
+        "React.js",
+        "Next.js",
+        "React Hooks",
+        "Redux",
+        "CSS",
+        "Sass",
+        "Bootstrap",
+        "Tailwind",
+        "WebSocket",
+        "Socket.IO",
+        "RESTful API",
+        "CI/CD",
+        "Git",
+        "Responsives Design",
+        "HTML"
+      ]
+    },
+    "EDUCATION": {
+      "title": "AUSBILDUNG",
+      "items": [
+        {
+          "university": "MADANI UNIVERSITÄT TABRIZ",
+          "degree": "BACHELOR IN CHEMIEINGENIEURWESEN",
+          "year": "2017–2021"
+        }
+      ]
+    },
+    "LANGUAGES": {
+      "title": "SPRACHEN",
+      "items": [
+        {
+          "name": "Englisch",
+          "level": "Berufliche Arbeitssprache"
+        },
+        {
+          "name": "Türkisch",
+          "level": "Muttersprache"
+        },
+        {
+          "name": "Persisch",
+          "level": "Muttersprache"
+        }
+      ]
+    }
   }
 }
