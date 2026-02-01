@@ -2,7 +2,6 @@
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
 import { useRef, useState } from "react";
-import { Spinner } from "react-bootstrap";
 import { MdDownload } from "react-icons/md";
 import { GoDotFill } from "react-icons/go";
 import { Spinner } from "react-bootstrap";
