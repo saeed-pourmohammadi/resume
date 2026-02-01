@@ -2,6 +2,7 @@
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
 import { useRef, useState } from "react";
+import { Spinner } from "react-bootstrap";
 import { MdDownload } from "react-icons/md";
 import { GoDotFill } from "react-icons/go";
 import { Spinner } from "react-bootstrap";
@@ -44,7 +45,7 @@ export default function Home() {
   }
 
   return (
-    <div className="p-4 w-full">
+    <div className="p-4 w-full bg-gray-50 min-h-screen">
       <div className="max-w-5xl mx-auto">
         {/* Download */}
         <div className="flex justify-center mb-4">
@@ -64,7 +65,7 @@ export default function Home() {
             {t("title")}
           </div>
 
-          <div className="flex flex-col md:flex-row justify-between items-center text-sm mb-4 gap-2 text-center">
+          <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center text-sm text-center sm:text-left gap-2 mb-4">
             <a
               href={`https://${t("linkedin")}`}
               target="_blank"
