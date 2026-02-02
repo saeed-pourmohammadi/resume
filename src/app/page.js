@@ -6,6 +6,7 @@ import { MdDownload } from "react-icons/md";
 import { GoDotFill } from "react-icons/go";
 import { Spinner } from "react-bootstrap";
 import { useTranslations } from "next-intl";
+import { useReactToPrint } from "react-to-print";
 
 export default function Home() {
   const t = useTranslations("HomePage");
@@ -15,33 +16,40 @@ export default function Home() {
   const experiences = t.raw("EXPERIENCE.items");
   const education = t.raw("EDUCATION.items")[0];
 
-  const pdfRef = useRef(null);
+  const contentRef = useRef(null);
   const [pending, setPending] = useState(false);
 
-  function download() {
-    if (!pdfRef.current) return;
-    setPending(true);
+const reactToPrintFn = useReactToPrint({
+  contentRef,
+  pageStyle: `
+    @page { size: auto; margin: 15mm; }
 
-    html2canvas(pdfRef.current, { scale: 2 }).then((canvas) => {
-      const imgData = canvas.toDataURL("image/png");
-      const pdf = new jsPDF("p", "mm", "a4", true);
-      const pdfWidth = pdf.internal.pageSize.getWidth();
-      const pdfHeight = pdf.internal.pageSize.getHeight();
-      const ratio = Math.min(pdfWidth / canvas.width, pdfHeight / canvas.height);
-      const imgX = (pdfWidth - canvas.width * ratio) / 2;
+    @media print {
+      /* ✅ مهم‌ترین بخش: چاپ رنگ‌ها و بکگراندها */
+      * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+        color-adjust: exact !important;
+      }
 
-      pdf.addImage(
-        imgData,
-        "PNG",
-        imgX,
-        15,
-        canvas.width * ratio,
-        canvas.height * ratio
-      );
-      pdf.save("resume-Saeed_Pourmohammadi.pdf");
-      setPending(false);
-    });
-  }
+      /* بعضی مرورگرها بکگراند رو روی html/body خاموش می‌کنن */
+      html, body {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+        background: white !important;
+      }
+
+      /* اگر Tailwind کلاس‌های bg روی خود المنت‌هاست، این کمک می‌کند */
+      .bg-gray-100, .bg-white, .bg-black, .bg-blue-500, .bg-orange-500 {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+
+      .page-break { break-after: page; page-break-after: always; }
+    }
+  `,
+});
+
 
   return (
     <div className="p-4 w-full bg-gray-50 min-h-screen">
@@ -49,7 +57,7 @@ export default function Home() {
         {/* Download */}
         <div className="flex justify-center mb-4">
           <button
-            onClick={download}
+            onClick={reactToPrintFn}
             disabled={pending}
             className="flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded disabled:opacity-50 w-44"
           >
@@ -59,7 +67,7 @@ export default function Home() {
         </div>
 
         {/* Resume */}
-        <div ref={pdfRef} className="shadow-lg bg-white rounded-2xl p-6">
+        <div ref={contentRef} className="shadow-lg bg-white rounded-2xl p-6">
           <div className="text-center text-2xl font-bold mb-4">
             {t("title")}
           </div>
@@ -86,7 +94,7 @@ export default function Home() {
           </div>
 
           {/* Experience */}
-          <div>
+          <div className="page-break">
             <div className="font-bold mb-2">
               {t("EXPERIENCE.title")}
             </div>
@@ -113,7 +121,7 @@ export default function Home() {
             {skills.map((skill, i) => (
               <div
                 key={i}
-                className="bg-gray-100 text-center py-2 rounded-lg"
+                className="bg-gray-100 rounded-lg h-12 flex items-center justify-center text-center"
               >
                 {skill}
               </div>

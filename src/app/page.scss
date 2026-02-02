@@ -4,3 +4,15 @@
 .text-justify {
   text-align: justify !important;
 }
+
+@media print {
+  .page-break {
+    break-after: page;
+    page-break-after: always;
+    break-after: page;
+    border: 1px solid transparent; /* Safari hack */
+  }
+  .header {
+    display: none !important;
+  }
+}
