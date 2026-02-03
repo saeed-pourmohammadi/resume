@@ -107,6 +107,9 @@ const reactToPrintFn = useReactToPrint({
                 </div>
                 <div className="ms-5 mt-1 text-sm text-justify">
                   <div className="font-bold">{exp["sub-title"]}</div>
+                  <div>
+                    {exp.sub_content}
+                </div>
                   {exp.content}
                 </div>
               </div>

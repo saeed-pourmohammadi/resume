@@ -18,12 +18,13 @@
         {
           "title": "expert developer",
           "sub-title": "FRONTEND, 2018–2021",
-          "content": "I've effectively utilized a combination of Javascript, React.js, and Redux to build robust frontend applications."
+          "content": "I've effectively utilized a combination of Javascript, React.js, and Redux to build robust frontend applications. By implementing responsive design techniques, I ensured that these applications deliver seamless user experiences across various devices. Furthermore, I integrated RESTful APIs to enable smooth communication between the frontend and backend, resulting in dynamic and interactive web experiences for users"
         },
         {
           "title": "expert developer",
           "sub-title": "FRONTEND, 2021–2024",
-          "content": "I've harnessed a diverse skill set to create exceptional web applications, leveraging HTML, CSS, Sass, and frameworks like Bootstrap and Tailwind."
+          "sub_content": "I've harnessed a diverse skill set to create exceptional web applications, leveraging HTML, CSS, Sass, and frameworks like Bootstrap and Tailwind. I've crafted visually stunning and intuitive user interfaces. JavaScript and TypeScript have been instrumental in adding dynamic functionality and enhancing user interactions. With React.js and Next.js, I've built scalable and high-performance applications, ensuring seamless navigation and rendering. My commitment to responsive design principles guarantees optimal user experiences across devices of all sizes.",
+          "content": "Moreover, I've integrated WebSocket technology to enable read-time communication and collaboration features in my projects. Git has been my go-to version control system, allowing for efficient collaboration and code management within development teams. Additionally, I've proficiently implemented Redux for state management, ensuring consistency and scalability as applications grow in complexity. Lastly, I've seamlessly integrated RESTfull APIs to facilitate data exchange between frontend and backend systems, enabling robust and dynamic web experiences for users."
         }
       ]
     },
