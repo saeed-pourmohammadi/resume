@@ -55,7 +55,7 @@ const reactToPrintFn = useReactToPrint({
     <div className="p-4 w-full bg-gray-50 min-h-screen">
       <div className="max-w-5xl mx-auto">
         {/* Download */}
-        <div className="flex justify-center mb-4">
+        <div className="flex justify-center mb-4 header">
           <button
             onClick={reactToPrintFn}
             disabled={pending}
