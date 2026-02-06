@@ -19,9 +19,9 @@ export default function Home() {
   const contentRef = useRef(null);
   const [pending, setPending] = useState(false);
 
-const reactToPrintFn = useReactToPrint({
-  contentRef,
-  pageStyle: `
+  const reactToPrintFn = useReactToPrint({
+    contentRef,
+    pageStyle: `
     @page { size: auto; margin: 15mm; }
 
     @media print {
@@ -48,8 +48,7 @@ const reactToPrintFn = useReactToPrint({
       .page-break { break-after: page; page-break-after: always; }
     }
   `,
-});
-
+  });
 
   return (
     <div className="p-4 w-full bg-gray-50 min-h-screen">
@@ -81,7 +80,7 @@ const reactToPrintFn = useReactToPrint({
               {t("linkedin")}
             </a>
             <span className="font-medium">{t("name")}</span>
-            <span className="break-all">{t("email")}</span>
+            <span className="break-all min-w-[265px]">{t("email")}</span>
           </div>
 
           {/* About */}
@@ -95,9 +94,7 @@ const reactToPrintFn = useReactToPrint({
 
           {/* Experience */}
           <div className="page-break">
-            <div className="font-bold mb-2">
-              {t("EXPERIENCE.title")}
-            </div>
+            <div className="font-bold mb-2">{t("EXPERIENCE.title")}</div>
 
             {experiences.map((exp, i) => (
               <div key={i} className="mb-4">
@@ -106,20 +103,23 @@ const reactToPrintFn = useReactToPrint({
                   {exp.title}
                 </div>
                 <div className="ms-5 mt-1 text-sm text-justify">
-                  <div className="font-bold">{exp["sub-title"]}</div>
-                  <div>
+                  <div className="font-bold mb-2">{exp["sub-title"]}</div>
+                  {exp.items?.map((item, i) => (
+                    <div key={i}>
+                      <span>- {item}</span>
+                    </div>
+                  ))}
+                  {/* <div>
                     {exp.sub_content}
                 </div>
-                  {exp.content}
+                  {exp.content} */}
                 </div>
               </div>
             ))}
           </div>
 
           {/* Skills */}
-          <div className="font-bold mt-6 mb-2">
-            {t("SKILLS.title")}
-          </div>
+          <div className="font-bold mt-6 mb-2">{t("SKILLS.title")}</div>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 mb-4">
             {skills.map((skill, i) => (
               <div
@@ -132,28 +132,20 @@ const reactToPrintFn = useReactToPrint({
           </div>
 
           {/* Education */}
-          <div className="font-bold mb-2">
-            {t("EDUCATION.title")}
-          </div>
+          <div className="font-bold mb-2">{t("EDUCATION.title")}</div>
           <div className="flex items-center gap-2 mb-1">
             <GoDotFill />
             <span>{education.university}</span>
           </div>
           <div className="ms-5 mb-4">
-            <span>{education.degree}</span>,{" "}
-            {education.year}
+            <span>{education.degree}</span>, {education.year}
           </div>
 
           {/* Languages */}
-          <div className="font-bold mb-2">
-            {t("LANGUAGES.title")}
-          </div>
+          <div className="font-bold mb-2">{t("LANGUAGES.title")}</div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
             {languages.map((lang, i) => (
-              <div
-                key={i}
-                className="bg-gray-100 text-center p-2 rounded-lg"
-              >
+              <div key={i} className="bg-gray-100 text-center p-2 rounded-lg align-content-center">
                 {lang.name} - {lang.level}
               </div>
             ))}

@@ -16,13 +16,28 @@
       "title": "BERUFSERFAHRUNG",
       "items": [
         {
-          "title": "Senior Frontend-Entwickler",
+          "title": "Frontend-Entwickler",
           "sub-title": "FRONTEND, 2018–2021",
+          "items": [
+            "Entwicklung skalierbarer Frontend-Anwendungen mit React und Redux",
+            "Umsetzung responsiver Benutzeroberflächen für verschiedene Endgeräte",
+            "Integration von REST-APIs zur Anbindung an Backend-Systeme",
+            "Optimierung von Performance und Ladezeiten"
+          ], 
           "content": "Ich habe JavaScript, React.js und Redux gezielt eingesetzt, um leistungsfähige und skalierbare Frontend-Anwendungen zu entwickeln. Durch die Anwendung responsiver Design-Prinzipien wurde eine konsistente und benutzerfreundliche Darstellung auf verschiedenen Endgeräten sichergestellt. Zudem habe ich RESTful APIs integriert, um eine effiziente Kommunikation zwischen Frontend und Backend zu ermöglichen und dynamische, interaktive Webanwendungen bereitzustellen."
         },
         {
-          "title": "Senior Frontend-Entwickler",
+          "title": "Frontend-Entwickler",
           "sub-title": "FRONTEND, 2021–2024",
+          "items": [
+            "Entwicklung moderner Webanwendungen mit React, Next.js und TypeScript",
+            "Implementierung wiederverwendbarer UI-Komponenten und sauberer Architektur",
+            "Gestaltung responsiver und barrierearmer Benutzeroberflächen",
+            "Integration von WebSocket-basierter Echtzeitkommunikation",
+            "Versionskontrolle und Teamarbeit mit Git sowie CI/CD-Prozessen",
+            "State-Management mit Redux",
+            "Anbindung von REST-APIs und Optimierung der Datenflüsse"
+          ], 
           "sub_content": "Ich habe ein vielseitiges Skillset genutzt, um hochwertige Webanwendungen zu entwickeln, wobei HTML, CSS, Sass sowie Frameworks wie Bootstrap und Tailwind gezielt eingesetzt wurden. Dabei habe ich visuell ansprechende und intuitive Benutzeroberflächen gestaltet. JavaScript und TypeScript spielten eine zentrale Rolle bei der Implementierung dynamischer Funktionen und der Verbesserung der Benutzerinteraktion. Mit React.js und Next.js habe ich skalierbare und performante Anwendungen entwickelt, die eine reibungslose Navigation und effizientes Rendering gewährleisten. Mein konsequenter Einsatz responsiver Design-Prinzipien stellt eine optimale Benutzererfahrung auf Endgeräten jeder Größe sicher.",
           "content": "Darüber hinaus habe ich WebSocket-Technologien integriert, um Echtzeitkommunikation und kollaborative Funktionen in meinen Projekten zu ermöglichen. Git diente dabei als zentrales Versionskontrollsystem und unterstützte eine effiziente Zusammenarbeit sowie ein strukturiertes Code-Management innerhalb von Entwicklungsteams. Zudem habe ich Redux professionell für das State-Management eingesetzt, um Konsistenz und Skalierbarkeit auch bei zunehmender Anwendungs­komplexität sicherzustellen. Abschließend habe ich RESTful APIs nahtlos integriert, um einen zuverlässigen Datenaustausch zwischen Frontend- und Backend-Systemen zu ermöglichen und leistungsstarke, dynamische Webanwendungen bereitzustellen."
         }
@@ -64,7 +79,7 @@
       "items": [
         {
           "name": "Englisch",
-          "level": "Berufliche Arbeitssprache"
+          "level": "B2 (Berufliche Arbeitssprache)"
         },
         {
           "name": "Türkisch",
