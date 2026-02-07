@@ -51,7 +51,7 @@ export default function Home() {
   });
 
   return (
-    <div className="p-4 w-full bg-gray-50 min-h-screen">
+    <div className="p-3 sm:p-4 w-full bg-gray-50 min-h-screen">
       <div className="max-w-5xl mx-auto">
         {/* Download */}
         <div className="flex justify-center mb-4 header">
@@ -66,7 +66,7 @@ export default function Home() {
         </div>
 
         {/* Resume */}
-        <div ref={contentRef} className="shadow-lg bg-white rounded-2xl p-6">
+        <div ref={contentRef} className="shadow-lg bg-white rounded-2xl p-3 sm:p-6">
           <div className="text-center text-2xl font-bold mb-4">
             {t("title")}
           </div>
@@ -98,11 +98,11 @@ export default function Home() {
 
             {experiences.map((exp, i) => (
               <div key={i} className="mb-4">
-                <div className="flex items-center gap-2 text-lg font-medium">
-                  <GoDotFill />
+                <div className="flex items-center gap-1 text-lg font-medium">
+                  <GoDotFill size={10} />
                   {exp.title}
                 </div>
-                <div className="ms-5 mt-1 text-sm text-justify">
+                <div className="sm:ms-4 mt-1 text-sm text-justify">
                   <div className="font-bold mb-2">{exp["sub-title"]}</div>
                   {exp.items?.map((item, i) => (
                     <div key={i}>
@@ -134,10 +134,10 @@ export default function Home() {
           {/* Education */}
           <div className="font-bold mb-2">{t("EDUCATION.title")}</div>
           <div className="flex items-center gap-2 mb-1">
-            <GoDotFill />
+            <GoDotFill size={10} />
             <span>{education.university}</span>
           </div>
-          <div className="ms-5 mb-4">
+          <div className="sm:ms-6 mb-4">
             <span>{education.degree}</span>, {education.year}
           </div>
 
