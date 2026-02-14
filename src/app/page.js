@@ -71,16 +71,21 @@ export default function Home() {
             {t("title")}
           </div>
 
-          <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center text-sm text-center sm:text-left gap-2 mb-4">
+          <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center text-sm sm:text-left gap-2 mb-4">
+            <div>
+            <span className="font-medium d-block">{t("name")}</span>
+            <span className="font-medium d-block">{t("years_old")}</span>
+            </div>
+            <div>
             <a
               href={`https://${t("linkedin")}`}
               target="_blank"
-              className="text-blue-600 hover:underline break-words"
+              className="text-blue-600 d-block hover:underline break-words"
             >
               {t("linkedin")}
             </a>
-            <span className="font-medium">{t("name")}</span>
-            <span className="break-all min-w-[265px]">{t("email")}</span>
+            <span className="break-all d-block min-w-[265px]">{t("email")}</span>
+            </div>
           </div>
 
           {/* About */}
